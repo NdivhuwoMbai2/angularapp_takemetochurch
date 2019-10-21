@@ -1,0 +1,84 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" validate (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label class="col-md-4">name</label>
+        <input type="text" class="form-control" 
+          formControlName="name" 
+          #name />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">surname</label>
+        <input type="text" class="form-control" 
+          formControlName="surname" 
+          #surname />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">birthday</label>
+        <input type="date" class="form-control" 
+          formControlName="birthday" 
+          #birthday required />
+      </div>
+        <div class="form-group">
+        <label class="col-md-4">telephonenumber</label>
+        <input type="text" class="form-control" 
+          formControlName="telephonenumber" 
+          #telephonenumber />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4"> Please enter your location cordinates from a map <br/> Example -33.9783333;25.5874001 </label>
+        <input type="text" class="form-control" 
+          formControlName="location" 
+          #location />
+      </div>
+
+      <div class="form-group">      
+        <label class="col-md-4">isAlive</label>
+        <select class="form-control" formControlName="isAlive" 
+          #isAlive >
+           <option value="1" >True</option>
+           <option value="0" >False</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label class="col-md-4">motherid</label>
+         <select class="form-control" formControlName="motherid" #motherid>       
+          <option value="1" disabled >Choose</option>
+           <option value="1" >No Parents</option>
+           <option *ngFor="let member of churchmembers" [ngValue]='member.idperson'>{{member.name}} {{member.surname}}</option>
+        </select>        
+      </div>
+     <div class="form-group">        
+        <label class="col-md-4">fatherid</label>
+        <select class="form-control" formControlName="fatherid" #fatherid>       
+          <option value="1" disabled >Choose</option>
+           <option value="1" >No Parents</option>
+           <option *ngFor="let member of churchmembers" [ngValue]='member.idperson'>{{member.name}} {{member.surname}}</option>
+        </select>
+      </div>
+      <div class="form-group">      
+        <label class="col-md-4">ismarried</label>
+        <select class="form-control" formControlName="ismarried" 
+          #ismarried>
+           <option value="1" >True</option>
+           <option value="0" >False</option>
+        </select>
+      </div>
+      
+      <div class="form-group">        
+        <label class="col-md-4">Select a church</label>
+        <select class="form-control" formControlName="idchurch" #idchurch>       
+          <option value="1" disabled >Choose</option>
+           <option *ngFor="let church of churches" [ngValue]='church.idchurch'>{{church.name}}</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+          Add User
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

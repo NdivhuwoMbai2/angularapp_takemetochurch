@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome</h1>
+    <h2>To The Developers Church</h2>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading"></div>
+    <div class="panel-body">
+      <h3></h3>
+  <a  routerLink="/church" routerLinkActive="active" style="padding-right: 10px;">
+        <button class="btn btn-primary" >church members</button>
+    </a> 
+     <a routerLink="/location" routerLinkActive="active" style="padding-right: 10px;">
+          <button class="btn btn-primary" > location</button> 
+    </a>     
+     <a routerLink="/adduser" routerLinkActive="active" style="padding-right: 10px;">
+            <button class="btn btn-primary" > add user </button>
+      </a>
+     <a routerLink="/addchurch" routerLinkActive="active" style="padding-right: 10px;">
+      <button class="btn btn-primary" >
+        add church 
+     </button>
+     </a>
+     <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  
+</div>
