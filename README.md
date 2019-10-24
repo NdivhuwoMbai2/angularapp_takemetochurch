@@ -2,6 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
+## How to get the source:
+
+To get the following application to your work station you can clone it using the following command
+
+git clone https://github.com/ndivhuwombai2/angularapp_takemetochurch.git
+
+or you can download the .zip file and extract it to your local machine
+
+## How to get setup environment:
+
+before running the application navigate to the location of the project
+
+cd ./downloads/angularapp_takemetochurch
+
+then to install any dependencies you should run the following command
+
+npm install
+
+for testing the application you follow the next step
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
