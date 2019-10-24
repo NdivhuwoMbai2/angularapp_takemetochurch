@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
+## Project screen shots
+
+# Home
+![alt tag](https://github.com/NdivhuwoMbai2/angularapp_takemetochurch/blob/master/datadoc/church%201.PNG)
+
+# Find the church
+![alt tag](https://github.com/NdivhuwoMbai2/angularapp_takemetochurch/blob/master/datadoc/church%202.PNG)
+
+
 ## How to get the source:
 
 To get the following application to your work station you can clone it using the following command
